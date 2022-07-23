@@ -35,7 +35,7 @@ function uploadBudget() {
 
     getAll.onsuccess = function() {
         if (getAll.result.length > 0) {
-            fetch('/api/transaction', {
+            fetch('/api/new_budget', {
                 method: 'POST',
                 body: JSON.stringify(getAll.result),
                 headers: {
